@@ -24,6 +24,7 @@ import java.util.List;
 public class KanaPagerAdapter extends FragmentGridPagerAdapter {
 
     private static final int TRANSITION_DURATION_MILLIS = 100;
+    private String[] system = Kana.hiragana;
     private Context mContext;
     private List<List<Fragment>> grid = new ArrayList<>();
     private LruCache<Integer, Drawable> mRowBackgrounds;
@@ -39,12 +40,12 @@ public class KanaPagerAdapter extends FragmentGridPagerAdapter {
             String[] contents = new String[Kana.vowels.length()];
             for (int i = 0; i < Kana.vowels.length(); i ++) {
                 titles[i] = Kana.getCorrectRomaji("" + Kana.consonants.charAt(j) + Kana.vowels.charAt(i));
-                contents[i] = Kana.hiragana[j].substring(i, i + 1);
+                contents[i] = system[j].substring(i, i + 1);
                 if (contents[i].equals("　")) {
                     titles[i] = "";
                 }
                 count ++;
-                Log.d(Kana.class.getName(), String.format("romaji: %s, hiragana: %s", titles[i], contents[i]));
+                Log.d(Kana.class.getName(), String.format("romaji: %s, kana: %s", titles[i], contents[i]));
             }
             CustomFragment fragment = new CustomFragment();
             Bundle bundle = new Bundle();
@@ -58,9 +59,9 @@ public class KanaPagerAdapter extends FragmentGridPagerAdapter {
         this.mPageBackgrounds = new LruCache<Point, Drawable>(grid.size()) {
 
             private int[] drawableIds = new int[] {
+                    R.drawable.bg0,
                     R.drawable.bg1,
-                    R.drawable.bg2,
-                    R.drawable.bg3
+                    R.drawable.bg2
             };
 
             private Drawable[] scaledDrawables = new Drawable[drawableIds.length];

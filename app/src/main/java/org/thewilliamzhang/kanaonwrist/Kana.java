@@ -37,7 +37,7 @@ public class Kana {
             "ラリルレロ",
             "ワ　　　ヲ",
             "ン　　　　"
-    }
+    };
 
     private static Map<String, String> converter = new HashMap<>();
 
