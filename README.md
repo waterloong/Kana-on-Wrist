@@ -1,6 +1,3 @@
 App Info
 ======
-
-Short Description
----------
-An Android Wear app that helps you memorize hiragana with your watch!
+Android Wear app to help you memorise hiraganas in Japanese
