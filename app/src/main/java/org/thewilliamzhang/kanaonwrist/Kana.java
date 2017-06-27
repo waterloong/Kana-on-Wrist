@@ -25,6 +25,20 @@ public class Kana {
             "ん　　　　"
     };
 
+    public static final String[] katakana = {
+            "アイウエオ",
+            "カキクケコ",
+            "サシスセソ",
+            "タチツテト",
+            "ナニヌネノ",
+            "ハヒフヘホ",
+            "マミムメモ",
+            "ヤ　ユ　ヨ",
+            "ラリルレロ",
+            "ワ　　　ヲ",
+            "ン　　　　"
+    };
+
     private static Map<String, String> converter = new HashMap<>();
 
     static {
