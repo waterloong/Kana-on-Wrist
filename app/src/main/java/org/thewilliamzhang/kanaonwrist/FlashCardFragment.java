@@ -28,7 +28,7 @@ import android.widget.TextView;
 
 public class FlashCardFragment extends Fragment {
 
-    private FlashCardFragment oppositeFragment;
+    private View.OnClickListener onClickListener;
     private boolean isFront;
 
     @Override
@@ -46,11 +46,17 @@ public class FlashCardFragment extends Fragment {
             TextView contentView = (TextView) contentLayout.getChildAt(i);
             contentView.setText(contents[i]);
         }
+
+        View view = rootView.findViewById(R.id.card);
+        view.setOnClickListener(this.onClickListener);
         return rootView;
     }
 
-    public void setOppositeFragment(FlashCardFragment oppositeFragment) {
-        this.oppositeFragment = oppositeFragment;
+    public void setOnClickListener(View.OnClickListener onClickListener) {
+        this.onClickListener = onClickListener;
     }
 
+    public void setFront(boolean front) {
+        isFront = front;
+    }
 }
