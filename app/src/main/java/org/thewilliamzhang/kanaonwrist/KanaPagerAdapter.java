@@ -24,7 +24,6 @@ import java.util.List;
 public class KanaPagerAdapter extends FragmentGridPagerAdapter {
 
     private static final int TRANSITION_DURATION_MILLIS = 100;
-    private String[] system = Kana.hiragana;
     private Context mContext;
     private List<List<Fragment>> grid = new ArrayList<>();
     private LruCache<Integer, Drawable> mRowBackgrounds;
@@ -37,22 +36,39 @@ public class KanaPagerAdapter extends FragmentGridPagerAdapter {
         for (int j = 0; j < Kana.consonants.length(); j ++) {
             List<Fragment> row = new ArrayList<>();
             String[] titles = new String[Kana.vowels.length()];
-            String[] contents = new String[Kana.vowels.length()];
+            String[] hiragana = new String[Kana.vowels.length()];
+            String[] katakana = new String[Kana.vowels.length()];
             for (int i = 0; i < Kana.vowels.length(); i ++) {
                 titles[i] = Kana.getCorrectRomaji("" + Kana.consonants.charAt(j) + Kana.vowels.charAt(i));
-                contents[i] = system[j].substring(i, i + 1);
-                if (contents[i].equals("　")) {
+                hiragana[i] = Kana.hiragana[j].substring(i, i + 1);
+                katakana[i] = Kana.katakana[j].substring(i, i + 1);
+                if (hiragana[i].equals("　")) {
                     titles[i] = "";
                 }
                 count ++;
-                Log.d(Kana.class.getName(), String.format("romaji: %s, kana: %s", titles[i], contents[i]));
+                Log.d(Kana.class.getName(), String.format("romaji: %s, kana: %s", titles[i], hiragana[i]));
             }
-            CustomFragment fragment = new CustomFragment();
+//            FlashCardFragment frontFragment = new FlashCardFragment();
+//            Bundle bundle = new Bundle();
+//            bundle.putStringArray("titles", titles);
+//            bundle.putStringArray("contents", hiragana);
+//            frontFragment.setArguments(bundle);
+//
+//            FlashCardFragment backFragment = new FlashCardFragment();
+//            Bundle backBundle = new Bundle();
+//            backBundle.putStringArray("titles", titles);
+//            backBundle.putStringArray("contents", katakana);
+//            frontFragment.setOppositeFragment(backFragment);
+//            backFragment.setOppositeFragment(frontFragment);
+//            backFragment.setArguments(backBundle);
+//            row.add(frontFragment);
+            WrapperFragment wrapperFragment = new WrapperFragment();
             Bundle bundle = new Bundle();
             bundle.putStringArray("titles", titles);
-            bundle.putStringArray("contents", contents);
-            fragment.setArguments(bundle);
-            row.add(fragment);
+            bundle.putStringArray("hiragana", hiragana);
+            bundle.putStringArray("katakana", katakana);
+            wrapperFragment.setArguments(bundle);
+            row.add(wrapperFragment);
             grid.add(row);
         }
 
