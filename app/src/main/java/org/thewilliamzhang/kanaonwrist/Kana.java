@@ -48,7 +48,7 @@ public class Kana {
         converter.put("hu", "fu");
         converter.put("wo", "o");
         converter.put(" a", "n");
-        for (char c: vowels.toCharArray()) {
+        for (char c : vowels.toCharArray()) {
             converter.put("v" + c, " " + c);
         }
     }

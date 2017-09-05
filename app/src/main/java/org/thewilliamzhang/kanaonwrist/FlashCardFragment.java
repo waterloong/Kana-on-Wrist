@@ -18,7 +18,9 @@ package org.thewilliamzhang.kanaonwrist;
 
 import android.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
@@ -26,15 +28,19 @@ import android.widget.TextView;
 
 public class FlashCardFragment extends Fragment {
 
+    private FlashCardFragment oppositeFragment;
+    private boolean isFront;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
-            Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.custom_fragment, container, false);
+                             Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.inner_fragment, container, false);
         String[] titles = getArguments().getStringArray("titles");
-        LinearLayout titleLayout  = (LinearLayout) rootView.findViewById(R.id.titles);
-        String[] contents = getArguments().getStringArray("contents");
+
+        LinearLayout titleLayout = (LinearLayout) rootView.findViewById(R.id.titles);
+        String[] contents = getArguments().getStringArray(isFront ? "hiragana" : "katakana");
         LinearLayout contentLayout = (LinearLayout) rootView.findViewById(R.id.contents);
-        for (int i = 0; i < titles.length; i ++) {
+        for (int i = 0; i < titles.length; i++) {
             TextView titleView = (TextView) titleLayout.getChildAt(i);
             titleView.setText(titles[i]);
             TextView contentView = (TextView) contentLayout.getChildAt(i);
@@ -42,4 +48,9 @@ public class FlashCardFragment extends Fragment {
         }
         return rootView;
     }
+
+    public void setOppositeFragment(FlashCardFragment oppositeFragment) {
+        this.oppositeFragment = oppositeFragment;
+    }
+
 }
