@@ -1,6 +1,7 @@
 package org.thewilliamzhang.kanaonwrist;
 
 import android.app.Fragment;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -26,16 +27,10 @@ public class WrapperFragment extends Fragment implements View.OnClickListener {
         frontFragment.setOnClickListener(this);
         backFragment.setOnClickListener(this);
         backFragment.setArguments(getArguments());
-        if (savedInstanceState == null) {
-            getChildFragmentManager().beginTransaction().add(R.id.container, frontFragment).commit();
+        FragmentManager childFragmentManager = getChildFragmentManager();
+        if (childFragmentManager.getBackStackEntryCount() == 0) {
+            childFragmentManager.beginTransaction().add(R.id.container, frontFragment).commit();
         }
-        View containerView = rootView.findViewById(R.id.container);
-        containerView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                flip();
-            }
-        });
         return rootView;
     }
 

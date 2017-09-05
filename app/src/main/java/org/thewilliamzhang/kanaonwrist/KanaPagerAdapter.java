@@ -23,15 +23,12 @@ import java.util.List;
  */
 public class KanaPagerAdapter extends FragmentGridPagerAdapter {
 
-    private static final int TRANSITION_DURATION_MILLIS = 100;
-    private Context mContext;
     private List<List<Fragment>> grid = new ArrayList<>();
     private LruCache<Integer, Drawable> mRowBackgrounds;
     private LruCache<Point, Drawable> mPageBackgrounds;
 
     public KanaPagerAdapter(final Context context, FragmentManager fm) {
         super(fm);
-        this.mContext = context;
         int count = 0;
         for (int j = 0; j < Kana.consonants.length(); j ++) {
             List<Fragment> row = new ArrayList<>();
@@ -46,22 +43,8 @@ public class KanaPagerAdapter extends FragmentGridPagerAdapter {
                     titles[i] = "";
                 }
                 count ++;
-                Log.d(Kana.class.getName(), String.format("romaji: %s, kana: %s", titles[i], hiragana[i]));
+                Log.d(Kana.class.getName(), String.format("romaji: %s, kana: %s, %s", titles[i], hiragana[i], katakana[i]));
             }
-//            FlashCardFragment frontFragment = new FlashCardFragment();
-//            Bundle bundle = new Bundle();
-//            bundle.putStringArray("titles", titles);
-//            bundle.putStringArray("contents", hiragana);
-//            frontFragment.setArguments(bundle);
-//
-//            FlashCardFragment backFragment = new FlashCardFragment();
-//            Bundle backBundle = new Bundle();
-//            backBundle.putStringArray("titles", titles);
-//            backBundle.putStringArray("contents", katakana);
-//            frontFragment.setOppositeFragment(backFragment);
-//            backFragment.setOppositeFragment(frontFragment);
-//            backFragment.setArguments(backBundle);
-//            row.add(frontFragment);
             WrapperFragment wrapperFragment = new WrapperFragment();
             Bundle bundle = new Bundle();
             bundle.putStringArray("titles", titles);

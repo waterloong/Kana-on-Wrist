@@ -47,8 +47,8 @@ public class FlashCardFragment extends Fragment {
             contentView.setText(contents[i]);
         }
 
-        View view = rootView.findViewById(R.id.card);
-        view.setOnClickListener(this.onClickListener);
+        View card = rootView.findViewById(R.id.card);
+        card.setOnClickListener(this.onClickListener);
         return rootView;
     }
 
