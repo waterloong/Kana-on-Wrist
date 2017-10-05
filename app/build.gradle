@@ -25,5 +25,4 @@ dependencies {
     provided 'com.google.android.wearable:wearable:2.0.5'
     compile 'com.google.android.gms:play-services-wearable:11.0.4'
     compile 'com.android.support:support-compat:26.0.0'
-
 }

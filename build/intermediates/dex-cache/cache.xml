@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.android.support/wearable/2.0.0-alpha1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="198f86964d1fe34215742672a4e095f916f0f4d9">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.support-wearable-2.0.0-alpha1_f263073034145b2961644f882b3d1ad4f0a781c6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="13270ae22369a0d50cb6c560aeca4056f025cae6">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.1_c85386022a8ad8f57ee12933335e608ba88a0edf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6080fe02f7a815e29ddb00246c0518460e5b83bb">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_3cce26b75f68157305e37fee9a0d89e3eda04d6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9be9f116f5380a1c629d8dcc1225a441924ca059">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_f19932c225b32a7897881052110ce4b25fbcf8b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_1154add531290aedc215d21296dbf43d69cb773c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_9684f34464e63d071ca148aff10fead6e2950d56/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_a8b1a1b493d67b36f840a461a2fb617825562856/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/9.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b49f3f1bddb0201ac336b50bb6c66040d26f6d0d">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-9.0.1_fc88f6f259e66f5cc472e6ec58a000b2090e5ad3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/usr/local/Cellar/android-sdk/24.4.1_1/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_51eb24e91ddbee4e2b0a209158e2ad356590715c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e711046a40e1562d85854ee09cd0a05254cb6463">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.1_e937bd0bd00f5571d9806526085a2767e05c02c5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ffc3c6fc861f04d45835c9eac5cec10acc180d55">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.1_5b1566282fc9496341d67e7869c327a24098aaaf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a3ebac72ca6befe2e900427505dbb3dd58a5ebbf">
+        <dex dex="/Users/William/IdeaProjects/KanaOnWrist/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.1_4986d9f7a300b96f77ab50477f73aa056eb4fa55/classes.dex" />
+    </item>
+
+</items>
